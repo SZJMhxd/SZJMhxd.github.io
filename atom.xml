@@ -6,7 +6,7 @@
   <link href="https://www.szjm.online/atom.xml" rel="self"/>
   
   <link href="https://www.szjm.online/"/>
-  <updated>2022-08-16T14:30:04.184Z</updated>
+  <updated>2022-08-17T13:52:47.014Z</updated>
   <id>https://www.szjm.online/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>方法重写</title>
+    <link href="https://www.szjm.online/2022/08/17/JAVA/06%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A111_%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/"/>
+    <id>https://www.szjm.online/2022/08/17/JAVA/06%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A111_%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/</id>
+    <published>2022-08-17T13:52:45.000Z</published>
+    <updated>2022-08-17T13:52:47.014Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h3><h4 id="static"><a href="#static" class="headerlink" title="static"></a>static</h4><p>新增A、B两个类，A类继承B类，两类各新增输出不同的test方法<span id="more"></span></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.oop.demo05;</span><br><span class="line"></span><br><span class="line"><span class="comment">//重写都是方法的重写 与属性无关</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">B</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;B=&gt;test()&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.oop.demo05;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">A</span> <span class="keyword">extends</span> <span class="title class_">B</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;A=&gt;test()&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.oop;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.oop.demo05.A;</span><br><span class="line"><span class="keyword">import</span> com.oop.demo05.B;</span><br><span class="line"></span><br><span class="line"><span class="comment">//一个项目只存在一个main方法 在Application测试类中</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Application</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">A</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">A</span>();</span><br><span class="line">        a.test();</span><br><span class="line"></span><br><span class="line">        <span class="type">B</span> <span class="variable">b</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">A</span>();</span><br><span class="line">        b.test();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>虽然都是new的A类 但是两次输出结果不同</p><img src="/2022/08/17/JAVA/06%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A111_%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/两次输出结果不同.png" alt="两次输出结果不同"><p>父类的引用指向了子类</p><p>用B类新建了A类的对象，把A赋值给了B，这时候B是A，A又继承了B类，向上转型。所以调用B类方法的时候，也就是B&#x3D;&gt;test</p><p>解释一下什么是多态？答：父类的引用可以指向子类的实现</p><p>方法的调用只和左边，定义的数据类型有关</p><h4 id="无static"><a href="#无static" class="headerlink" title="无static"></a>无static</h4><p>A、B两类不使用static</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.oop.demo05;</span><br><span class="line"></span><br><span class="line"><span class="comment">//重写都是方法的重写 与属性无关</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">B</span> &#123;</span><br><span class="line"><span class="comment">//    public static void test()&#123;</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;B=&gt;test()&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.oop.demo05;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">A</span> <span class="keyword">extends</span> <span class="title class_">B</span>&#123;</span><br><span class="line"><span class="comment">//    public static void test()&#123;</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;A=&gt;test()&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>此时两次的输出结果都是a的</p><img src="/2022/08/17/JAVA/06%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A111_%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/此时两次的输出结果都是a的.png" alt="此时两次的输出结果都是a的"><p>行数栏上有o标识 表示重写</p><img src="/2022/08/17/JAVA/06%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A111_%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/重写标识.png" alt="重写标识"><h4 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h4><img src="/2022/08/17/JAVA/06%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A111_%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/快捷重写.png" alt="快捷重写"><img src="/2022/08/17/JAVA/06%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A111_%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/快捷重写2.png" alt="快捷重写2"><p>即b是A new出来的对象，因此调用了A的方法</p><p>因为静态方法是类的方法，而非静态是对象的方法</p><p>有static时，b调用了B类的方法，因为b是用b类定义的</p><p>没有static时，b调用的是对象的方法，而b是用A类new的</p><p>子类重写了父类的方法</p><p><strong>静态方法只能被继承，不能被重写</strong></p><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>重写：需要有继承关系 子类重写父类的方法</p><p>​           子类和父类的方法必须一致 方法体不同 </p><ol><li>方法名必须相同</li><li>参数列表必须相同</li><li>修饰符：范围可以扩大不能缩小  public&gt;protected&gt;default&gt;private</li><li>抛出异常： 范围可以被缩小不能扩大</li></ol><p>为什么需要重写？？？</p><ol><li>父类的功能子类不一定需要或者不一定满足</li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;方法重写&quot;&gt;&lt;a href=&quot;#方法重写&quot; class=&quot;headerlink&quot; title=&quot;方法重写&quot;&gt;&lt;/a&gt;方法重写&lt;/h3&gt;&lt;h4 id=&quot;static&quot;&gt;&lt;a href=&quot;#static&quot; class=&quot;headerlink&quot; title=&quot;static&quot;&gt;&lt;/a&gt;static&lt;/h4&gt;&lt;p&gt;新增A、B两个类，A类继承B类，两类各新增输出不同的test方法&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="狂神" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/"/>
+    
+    <category term="狂神说Java" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/%E7%8B%82%E7%A5%9E%E8%AF%B4Java/"/>
+    
+    <category term="Java零基础学习视频通俗易懂" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/%E7%8B%82%E7%A5%9E%E8%AF%B4Java/Java%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82/"/>
+    
+    <category term="Java面向对象" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/%E7%8B%82%E7%A5%9E%E8%AF%B4Java/Java%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+    <category term="自学" scheme="https://www.szjm.online/categories/%E8%87%AA%E5%AD%A6/"/>
+    
+    <category term="Java" scheme="https://www.szjm.online/categories/%E8%87%AA%E5%AD%A6/Java/"/>
+    
+    <category term="面向对象" scheme="https://www.szjm.online/categories/%E8%87%AA%E5%AD%A6/Java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+    
+    <category term="Java" scheme="https://www.szjm.online/tags/Java/"/>
+    
+    <category term="狂神" scheme="https://www.szjm.online/tags/%E7%8B%82%E7%A5%9E/"/>
+    
+    <category term="面向对象" scheme="https://www.szjm.online/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>Super详解</title>
@@ -708,44 +745,6 @@
 &lt;li&gt;&lt;p&gt;比较数组中两个相邻元素 如果a&amp;gt;b 交换位置&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;每次比较都会产生出最大或最小的数字 下一轮少一次排序&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="狂神" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/"/>
-    
-    <category term="狂神说Java" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/%E7%8B%82%E7%A5%9E%E8%AF%B4Java/"/>
-    
-    <category term="Java零基础学习视频通俗易懂" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/%E7%8B%82%E7%A5%9E%E8%AF%B4Java/Java%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82/"/>
-    
-    <category term="Java数组" scheme="https://www.szjm.online/categories/%E7%8B%82%E7%A5%9E/%E7%8B%82%E7%A5%9E%E8%AF%B4Java/Java%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82/Java%E6%95%B0%E7%BB%84/"/>
-    
-    <category term="自学" scheme="https://www.szjm.online/categories/%E8%87%AA%E5%AD%A6/"/>
-    
-    <category term="Java" scheme="https://www.szjm.online/categories/%E8%87%AA%E5%AD%A6/Java/"/>
-    
-    <category term="数组" scheme="https://www.szjm.online/categories/%E8%87%AA%E5%AD%A6/Java/%E6%95%B0%E7%BB%84/"/>
-    
-    
-    <category term="Java" scheme="https://www.szjm.online/tags/Java/"/>
-    
-    <category term="狂神" scheme="https://www.szjm.online/tags/%E7%8B%82%E7%A5%9E/"/>
-    
-    <category term="数组" scheme="https://www.szjm.online/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arrays类详解</title>
-    <link href="https://www.szjm.online/2022/04/09/JAVA/05%E6%95%B0%E7%BB%84/Java%E6%95%B0%E7%BB%8407_Arrays%E7%B1%BB%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://www.szjm.online/2022/04/09/JAVA/05%E6%95%B0%E7%BB%84/Java%E6%95%B0%E7%BB%8407_Arrays%E7%B1%BB%E8%AF%A6%E8%A7%A3/</id>
-    <published>2022-04-09T02:25:58.000Z</published>
-    <updated>2022-08-15T11:16:38.086Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h3><ul><li>数组的工具类<code>java.util.Arrays</code><span id="more"></span></li><li>由于数组对象本身并没有什么方法可以供我们调用,但API中提供了一个工具类<code>Arrays</code>供我们使<br>用,从而可以对数据对象进行一些基本的操作。</li><li>查看JDK帮助文档</li><li><code>Arrays</code>类中的方法都是<code>static</code>修饰的静态方法,在使用的时候可以直接使用类名进行调用,而”不<br>用”使用对象来调用(注意:是”不用”而不是”不能”)</li><li>具有以下常用功能:<ul><li>给数组赋值:通过<code>fill</code>方法</li><li>对数组排序:通过<code>sort</code>方法,按升序。</li><li>比较数组:通过<code>equals</code>方法比较数组中元素值是否相等</li><li>查找数组元素: 通过<code>binarySearch</code>方法能对排序好的数组进行二分查找法操作。</li></ul></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.szjm.array;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayDemo06</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] a = &#123;<span class="number">1</span>, <span class="number">456</span>, <span class="number">75</span>, <span class="number">7896</span>, <span class="number">4567</span>, <span class="number">7641</span>, <span class="number">15</span>, <span class="number">64</span>, <span class="number">73</span>, <span class="number">731</span>, <span class="number">8317</span> , <span class="number">46843</span>, <span class="number">47</span>&#125;;</span><br><span class="line"></span><br><span class="line">        System.out.println(a);</span><br><span class="line"></span><br><span class="line"><span class="comment">//        打印数组元素 Arrays.toString</span></span><br><span class="line">        System.out.println(Arrays.toString(a));</span><br><span class="line"><span class="comment">//        造轮子输出</span></span><br><span class="line">        printArray(a);</span><br><span class="line"><span class="comment">//        排序 升序</span></span><br><span class="line">        Arrays.sort(a);</span><br><span class="line">        System.out.println(Arrays.toString(a));</span><br><span class="line"><span class="comment">//        填充</span></span><br><span class="line">        Arrays.fill(a, <span class="number">0</span>);</span><br><span class="line">        System.out.println(Arrays.toString(a));</span><br><span class="line"><span class="comment">//        填充 范围</span></span><br><span class="line">        Arrays.fill(a, <span class="number">2</span>, <span class="number">6</span>,<span class="number">1</span>);</span><br><span class="line">        System.out.println(Arrays.toString(a));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">printArray</span><span class="params">(<span class="type">int</span>[] a)</span>&#123;</span><br><span class="line">        System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            System.out.print(a[i]);</span><br><span class="line">            <span class="keyword">if</span> (i != a.length - <span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;, &quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><img src="/2022/04/09/JAVA/05%E6%95%B0%E7%BB%84/Java%E6%95%B0%E7%BB%8407_Arrays%E7%B1%BB%E8%AF%A6%E8%A7%A3/Demo06.png">]]></content>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;Arrays类&quot;&gt;&lt;a href=&quot;#Arrays类&quot; class=&quot;headerlink&quot; title=&quot;Arrays类&quot;&gt;&lt;/a&gt;Arrays类&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;数组的工具类&lt;code&gt;java.util.Arrays&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</summary>
     
     
     
