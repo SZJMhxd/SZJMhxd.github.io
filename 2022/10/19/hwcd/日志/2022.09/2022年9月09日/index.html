@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content=""><meta name="keywords" content=""><meta name="author" content="十早九木"><meta name="copyright" content="十早九木"><title>十早九木のBlog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7681d949619b1341034a17f1337d10ec";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.2.0'
+} </script><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="十早九木のBlog" type="application/atom+xml">
+</head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E8%AF%A6%E6%83%85-%E5%89%8D%E7%AB%AF"><span class="toc-number">1.</span> <span class="toc-text">需求详情 前端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E8%AF%A6%E6%83%85%E7%9A%84%E9%9C%80%E6%B1%82%E5%90%8D%E7%A7%B0-%E5%89%8D%E5%90%8E%E7%AB%AF"><span class="toc-number">2.</span> <span class="toc-text">需求详情的需求名称 前后端</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">十早九木</div><div class="author-info__description text-center"></div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/szjmhxd">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">122</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">38</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">60</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">十早九木のBlog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">时间线</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title">无题</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2022-10-19</time><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">1.5k</span><span class="post-meta__separator">|</span><span>阅读时长: 5 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h3 id="需求详情-前端"><a href="#需求详情-前端" class="headerlink" title="需求详情 前端"></a>需求详情 前端</h3><p>问题：需求详情</p>
+<p>解决过程：</p>
+<ol>
+<li><p>之前写表格遇到过 使用的是<code>show-overflow-tooltip</code> 但是这个只对表格生效 不能再次使用</p>
+</li>
+<li><p>准备使用element的Popover 弹出框组件</p>
+</li>
+<li><p>查看文档扒了代码下来发现没有样式</p>
+</li>
+<li><p>查询发现Popover 弹出框有严格的使用条件</p>
+</li>
+<li><p>准备去哔哩哔哩学习现写一个 过于复杂 放弃</p>
+</li>
+<li><p>在逛bilibili时发现他们的分p栏也是这种效果 扒了代码下来</p>
+</li>
+<li><p>发现用的是title的方法 能实现功能 但是和element的Popover 弹出框组件一样没有样式</p>
+</li>
+<li><p>搜索设置title的样式的方法 没有效果</p>
+</li>
+<li><p>搜索过程中发现给第三方组件库加新样式的方法 可以限制Tooltip 文字提示的提示框宽度</p>
+</li>
+<li><p>之前看过Tooltip 文字提示框 有样式 比较好看 但是太长了 占一页 有时两侧的数据还显示不全</p>
+</li>
+<li><p>换成Tooltip 文字提示，修改样式</p>
+</li>
+<li><pre><code class="css">/*Tooltip 文字提示*/
+.el-tooltip__popper &#123;
+  max-width:50%;
+  font-size: 16px;
+&#125;
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">13. 基础格式的提示框需要`“”`不是很方便 换成了更多 Content的样式 更加简洁</span><br><span class="line"></span><br><span class="line">14. ```html</span><br><span class="line">    &lt;el-tooltip class=&quot;item&quot; effect=&quot;dark&quot; content=&quot;Top Center 提示文字&quot; placement=&quot;top&quot;&gt;</span><br><span class="line">        &lt;el-button&gt;上边&lt;/el-button&gt;</span><br><span class="line">    &lt;/el-tooltip&gt;</span><br><span class="line">    &lt;!-- 替换成 --&gt;</span><br><span class="line">    &lt;el-tooltip placement=&quot;top&quot; effect=&quot;light&quot;&gt;</span><br><span class="line">        &lt;div slot=&quot;content&quot;&gt;&#123;&#123;demandDetail.name&#125;&#125;&lt;/div&gt;</span><br><span class="line">        &lt;span&gt;&#123;&#123;demandDetail.name&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;/el-tooltip&gt;</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>研究下面的文字展开效果</p>
+</li>
+<li><p>element没有一样效果的组件 区别的地方看</p>
+</li>
+<li><p>看到很多不错的组件 但是我本地总是不能实现</p>
+</li>
+<li><p>暂时搁置 研究下面的时间线</p>
+</li>
+<li><p>element有对应的东西 cv大法</p>
+</li>
+<li><p>修改一下外标签的样式</p>
+</li>
+<li><pre><code class="html">&lt;div class=&quot;border_radius&quot;&gt;
+  &lt;div class=&quot;left-lineBox&quot; style=&quot;margin-top:22px; margin-left:-20px;&quot;&gt;
+    &lt;el-timeline&gt;
+      &lt;el-timeline-item
+        v-for=&quot;(activity, index) in activities&quot;
+        :key=&quot;index&quot;
+        :icon=&quot;activity.icon&quot;
+        :type=&quot;activity.type&quot;
+        :color=&quot;activity.color&quot;
+        :size=&quot;activity.size&quot;
+        :timestamp=&quot;activity.timestamp&quot;&gt;
+        &#123;&#123;activity.content&#125;&#125;
+      &lt;/el-timeline-item&gt;
+    &lt;/el-timeline&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">22. element默认的样式与需求文档不太一样 修改之</span><br><span class="line"></span><br><span class="line">23. 对三种element提供的样式进行对比 为了不涉及排序（因为在我这里不生效)，最后选择了对自定义样式进行修改 还能定义更多的美化效果</span><br><span class="line"></span><br><span class="line">24. 学到了用检查cv样式的方法</span><br><span class="line"></span><br><span class="line">25. 先从时间线的竖线下手</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">26. ```css</span><br><span class="line">    /*时间线的线*/</span><br><span class="line">    .el-timeline-item__tail &#123;</span><br><span class="line">      -webkit-box-direction: normal;</span><br><span class="line">      color: rgb(0, 0, 0);</span><br><span class="line">      font-size: 14px;</span><br><span class="line">      list-style: none;</span><br><span class="line">      position: absolute;</span><br><span class="line">      left: 4px;</span><br><span class="line">      height: 100%;</span><br><span class="line">      border-left: 2px solid #797979;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>然后修改旁边圆的样式</p>
+</li>
+<li><p>本来准备直接修改旁边的圆为一个icon 但是element的icon库没有这种简单的圆形 引入外部icon太麻烦 不用</p>
+</li>
+<li><p>修改借点为一个图形 设置圆角为50%就变成了圆 </p>
+</li>
+<li><p>设置背景和边框为需要的效果</p>
+</li>
+<li><p>设置形状变大后不在时间线的中间了 修改位置</p>
+</li>
+<li><p>&#96;&#96;&#96;css<br>&#x2F;<em>时间线的圈</em>&#x2F;<br>.el-timeline-item__node {<br>  position: absolute;<br>  background-color: #ffffff;<br>  border-color: #606060;<br>  border-radius: 50%;<br>  border-width:2px;<br>  border-style: solid;<br>  height: 20px;<br>  width: 20px;<br>  margin-left:-5px;<br>  display: -webkit-box;<br>  display: -ms-flexbox;<br>  display: flex;<br>  -webkit-box-pack: center;<br>  -ms-flex-pack: center;<br>  justify-content: center;<br>  -webkit-box-align: center;<br>  -ms-flex-align: center;<br>  align-items: center;<br>}</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">33. 最后修改旁边的文字样式 标题以后还得改 因为里面得有嵌套的蓝色文字</span><br><span class="line"></span><br><span class="line">34. 时间样式这里准备按照需求新增`时间：  `字样 但是`content:`没有效果</span><br><span class="line"></span><br><span class="line">35. 搜索一番后发现用法不对需要用`::before&#123;&#125;`</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">36. ```css</span><br><span class="line">    /*时间线时间*/</span><br><span class="line">    .el-timeline-item__timestamp.is-bottom &#123;</span><br><span class="line">      content: &quot;时间：  &quot;;</span><br><span class="line">      margin-top: 8px;</span><br><span class="line">      font-size: 16px;</span><br><span class="line">    &#125;</span><br><span class="line">    .el-timeline-item__timestamp.is-bottom::before &#123;</span><br><span class="line">      content:&quot;时间: &quot;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>结果：大部分样式已经完成 但还需要完善</p>
+<h3 id="需求详情的需求名称-前后端"><a href="#需求详情的需求名称-前后端" class="headerlink" title="需求详情的需求名称 前后端"></a>需求详情的需求名称 前后端</h3><p>问题：需求详情</p>
+<p>解决过程：</p>
+<ol>
+<li>前端界面的获取是仿照<code>updateDemand</code>的，所以只要我们把数据给<code>DemandManage.vue</code>，也就是<code>listDemands</code>接口有数据 大家就都有数据</li>
+<li>一个个按照顺序来 大部分都是本来就有的</li>
+<li>需要添加的有phone 手机号 这个考虑到数据库数据不规范 设置没有手机号的返回为“未设置手机号”</li>
+<li>还有个发布时间 查看数据库数据和相关代码发现，有一个字段intime，就是新增这条数据的时间 作为intime使用</li>
+<li>还发现了之前的工具类<code>getDateTimeStr()</code> 啊这 我还自己写了一个…</li>
+<li>还有一个比较麻烦的就是需求类型 </li>
+<li>这个字段已经有了 但是只有二类字段 需求上是要求一类二类都显示的</li>
+<li>查看数据库 有相关字段和id id暂时不用管 字段是能使用的 </li>
+<li>之前的代码是使用<code>TDemand</code>里的<code>ServiceType</code>但是这个是一个类 而且不包含服务类型全称</li>
+<li>查看代码发现还有一个<code>DemandType</code>是数据库原本数据</li>
+<li>新问题 <code>TDemand</code>的<code>ServiceType</code>放到<code>ListDemandVo</code>的<code>DemandType</code>里去了 这导致为了不大批量修改其他代码  我们只能用别的字段</li>
+<li>这个框架又限制字段名称必须与数据库对应 这就得占用一个其他的字段 最后不得不<code>t.setServiceType</code></li>
+<li>由于数据库字段两个类之间使用<code>&amp;</code>分格，需求是用<code>-</code>分格，使用<code>.replace(&#39;&amp;&#39;,&#39;-&#39;)</code>进行替换</li>
+<li>这个预计时长不知道是啥 猜猜和<code>持续时长duration</code>是一个东西 暂时使用</li>
+<li>这个所在区由于地址不规范暂时不修改 如果数据全部是<code>天津市河东区丰乐里</code>或者<code>天津市天津市西青区</code>可能会考虑进行分隔</li>
+</ol>
+<p>结果：完成需求基本信息的后端编写</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">十早九木</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.szjm.online/2022/10/19/hwcd/日志/2022.09/2022年9月09日/">https://www.szjm.online/2022/10/19/hwcd/日志/2022.09/2022年9月09日/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.szjm.online">十早九木のBlog</a>！</span></div></div><div class="post-meta__tag-list"></div><div class="post-qr-code"><div class="post-qr-code-item"><img class="post-qr-code__img" src="../../../../../../../wx.jpg"><div class="post-qr-code__desc">来杯奶茶吧</div></div><div class="post-qr-code-item"><img class="post-qr-code__img" src="../../../../../../../zfb.jpg"><div class="post-qr-code__desc">圣代我也喜欢</div></div></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2022/10/19/hwcd/%E6%97%A5%E5%BF%97/2022.09/2022%E5%B9%B49%E6%9C%8813%E6%97%A5/"><i class="fa fa-chevron-left">  </i><span></span></a></div><div class="next-post pull-right"><a href="/2022/10/19/hwcd/%E6%97%A5%E5%BF%97/2022.09/2022%E5%B9%B49%E6%9C%8808%E6%97%A5/"><span></span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2020 - 2022 By 十早九木</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

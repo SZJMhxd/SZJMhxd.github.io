@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content=""><meta name="keywords" content=""><meta name="author" content="十早九木"><meta name="copyright" content="十早九木"><title>十早九木のBlog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7681d949619b1341034a17f1337d10ec";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.2.0'
+} </script><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="十早九木のBlog" type="application/atom+xml">
+</head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#app%E7%AB%AF%E6%97%A0%E6%B3%95%E7%99%BB%E9%99%86"><span class="toc-number">1.</span> <span class="toc-text">app端无法登陆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#51%E5%89%8D%E5%90%8E%E5%8F%B0%E6%95%B0%E6%8D%AE%E6%95%B0%E9%87%8F%E4%B8%8D%E4%B8%80%E8%87%B4"><span class="toc-number">2.</span> <span class="toc-text">51前后台数据数量不一致</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#51%E5%89%8D%E5%90%8E%E5%8F%B0%E6%95%B0%E6%8D%AE%E4%B8%8D%E4%B8%80%E8%87%B4"><span class="toc-number">3.</span> <span class="toc-text">51前后台数据不一致</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#52-1%E7%AD%9B%E9%80%89%E6%A0%8F%E5%BD%93%E4%B8%AD%E6%B2%A1%E6%9C%89%E9%9C%80%E6%B1%82%E5%90%8D%E7%A7%B0%E3%80%81%E9%9C%80%E6%B1%82%E7%8A%B6%E6%80%81%E3%80%81%E6%89%80%E5%9C%A8%E5%9C%B0%E7%9A%84%E7%AD%9B%E9%80%89%E9%A1%B9"><span class="toc-number">4.</span> <span class="toc-text">52.1筛选栏当中没有需求名称、需求状态、所在地的筛选项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#52-2%E9%9C%80%E6%B1%82%E7%B1%BB%E5%9E%8B%E5%88%97%E7%9A%84%E6%95%B0%E6%8D%AE%E6%98%AF%E6%AD%BB%E6%95%B0%E6%8D%AE"><span class="toc-number">5.</span> <span class="toc-text">52.2需求类型列的数据是死数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#52-3%E6%97%B6%E9%95%BF%E5%88%97%E6%A0%87%E9%A2%98%E5%87%BA%E7%8E%B0%E9%94%99%E5%88%AB%E5%AD%97"><span class="toc-number">6.</span> <span class="toc-text">52.3时长列标题出现错别字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#52-4%E6%8E%A5%E5%8D%95%E4%BA%BA%E5%88%97%E9%87%8C%E6%B2%A1%E6%9C%89%E6%8E%A5%E5%8D%95%E4%BA%BA%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%BE%E7%A4%BA%E2%80%9C%E6%97%A0%E4%BA%BA%E6%8E%A5%E5%8D%95%E2%80%9D"><span class="toc-number">7.</span> <span class="toc-text">52.4接单人列里没有接单人的时候，应该显示“无人接单”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#53-1-%E7%94%A8%E6%88%B7%E8%87%AA%E5%B7%B1%E8%AE%BE%E7%BD%AE%E7%9A%84%E9%9C%80%E6%B1%82%E7%B1%BB%E5%9E%8B%E6%B2%A1%E6%9C%89%E6%98%BE%E7%A4%BA"><span class="toc-number">8.</span> <span class="toc-text">53.1 用户自己设置的需求类型没有显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#53-2-%E6%97%B6%E9%95%BF%E6%A0%87%E9%A2%98%E9%94%99%E5%88%AB%E5%AD%97"><span class="toc-number">9.</span> <span class="toc-text">53.2 时长标题错别字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#53-3-%E8%AF%A6%E7%BB%86%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E6%95%B0%E6%8D%AE"><span class="toc-number">10.</span> <span class="toc-text">53.3 详细地址没有数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#53-4-%E4%BF%9D%E5%AD%98%E5%90%8E%EF%BC%8C%E7%82%B9%E5%87%BB%E6%8F%90%E4%BA%A4%E6%B2%A1%E6%9C%89%E4%BF%9D%E5%AD%98%E5%B9%B6%E9%80%80%E5%87%BA%E8%AF%A5%E9%A1%B5%E9%9D%A2"><span class="toc-number">11.</span> <span class="toc-text">53.4 保存后，点击提交没有保存并退出该页面</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">十早九木</div><div class="author-info__description text-center"></div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/szjmhxd">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">122</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">38</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">60</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">十早九木のBlog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">时间线</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title">无题</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2022-10-19</time><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">1.1k</span><span class="post-meta__separator">|</span><span>阅读时长: 3 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h3 id="app端无法登陆"><a href="#app端无法登陆" class="headerlink" title="app端无法登陆"></a>app端无法登陆</h3><p>问题：在模拟器中运行小程序之后一直在登录界面转圈</p>
+<p>解决过程： 查看前端后端数据库都没有问题，修改ip也无法解决，重置了模拟器网络能进去了</p>
+<p>结果：能够正常进入小程序</p>
+<h3 id="51前后台数据数量不一致"><a href="#51前后台数据数量不一致" class="headerlink" title="51前后台数据数量不一致"></a>51前后台数据数量不一致</h3><p>问题：前后台数据明显不一致</p>
+<p>解决过程： </p>
+<ol>
+<li>监听后台接口 查看到后台查询地址</li>
+<li>通过代理抓包模拟器数据 得到前台插叙地址</li>
+<li>尝试查看对应的sql语句 hibernate框架看不太懂…</li>
+<li>尝试修改sql语句 报错</li>
+<li>使用祝哥提供的方法进行排序 没有作用</li>
+<li>查看mysql数据库查询日志<a target="_blank" rel="noopener" href="https://blog.csdn.net/biyating/article/details/107894125">mysql如何开启日志</a>  <a target="_blank" rel="noopener" href="https://www.cnblogs.com/wangkongming/p/3684950.html">mysql日志详细解析</a></li>
+<li>发现sql语句没有问题</li>
+<li>找到sql字段注释 了解了前后台数据为什么不一样多</li>
+<li>摸索中发现前台数据排序规律是地址远近</li>
+</ol>
+<p>结果：因为后台显示的是所有数据 而app上能接取的只能是未被别人接单的数据和没有指定接单人的数据 而数据顺序杂乱是因为这是按照发布位置离当前位置的距离进行排序的</p>
+<h3 id="51前后台数据不一致"><a href="#51前后台数据不一致" class="headerlink" title="51前后台数据不一致"></a>51前后台数据不一致</h3><p>问题：前后台数据对应不上</p>
+<p>解决过程：</p>
+<ol>
+<li>由于已经大致了解了这个数据库，猜测问题是前后台用的不是一个数据库</li>
+<li>在公网的前端和后端分别修改数据 发现没有同步</li>
+<li>找祝哥确认 确实是前后台数据库不是一个</li>
+</ol>
+<p>结果：前后台数据库不一致所以数据不同步</p>
+<h3 id="52-1筛选栏当中没有需求名称、需求状态、所在地的筛选项"><a href="#52-1筛选栏当中没有需求名称、需求状态、所在地的筛选项" class="headerlink" title="52.1筛选栏当中没有需求名称、需求状态、所在地的筛选项"></a>52.1筛选栏当中没有需求名称、需求状态、所在地的筛选项</h3><p>问题： 筛选栏当中没有需求名称、需求状态、所在地的筛选项，这在以后运营管理上会造成很大的困扰。</p>
+<p>解决过程：仿照之前的界面写出来看界面，并修改了填充块大小</p>
+<p>结果：只有界面 暂时没有功能</p>
+<h3 id="52-2需求类型列的数据是死数据"><a href="#52-2需求类型列的数据是死数据" class="headerlink" title="52.2需求类型列的数据是死数据"></a>52.2需求类型列的数据是死数据</h3><p>问题：需求类型列的数据是死数据</p>
+<p>解决过程：</p>
+<ol>
+<li>查看数据 数据非常随机不像是写死的死数据</li>
+<li>控制台查看接口 确认是后端返回的值</li>
+<li>数据库查看表 确定是表里的数据</li>
+<li>应该是公网没有更新</li>
+</ol>
+<p>结果：没有问题 应该是公网没有更新</p>
+<h3 id="52-3时长列标题出现错别字"><a href="#52-3时长列标题出现错别字" class="headerlink" title="52.3时长列标题出现错别字"></a>52.3时长列标题出现错别字</h3><p>问题：时长列标题出现错别字</p>
+<p>解决过程： 修改相关文字</p>
+<p>结果：修改完成</p>
+<h3 id="52-4接单人列里没有接单人的时候，应该显示“无人接单”"><a href="#52-4接单人列里没有接单人的时候，应该显示“无人接单”" class="headerlink" title="52.4接单人列里没有接单人的时候，应该显示“无人接单”"></a>52.4接单人列里没有接单人的时候，应该显示“无人接单”</h3><p>问题：后端的默认数据不对</p>
+<p>解决过程：</p>
+<ol>
+<li>在前端界面全局搜索相关字“测试数据”</li>
+<li>根据变量名称辨认需要修改的文字</li>
+<li>修改无接单人为“无人接单”，无需求类型为“未设置类型”</li>
+<li>再次与经理沟通后，为了防止有人起“无人接单”这种奇怪的名字，修改为无接单人为“—-”</li>
+</ol>
+<p>结果：修改完成</p>
+<h3 id="53-1-用户自己设置的需求类型没有显示"><a href="#53-1-用户自己设置的需求类型没有显示" class="headerlink" title="53.1 用户自己设置的需求类型没有显示"></a>53.1 用户自己设置的需求类型没有显示</h3><p>问题：用户自己设置的需求类型没有显示</p>
+<p>解决过程：</p>
+<ol>
+<li>查看网页端和app端均未发现用户可以自己设置需求类型的功能 </li>
+<li>与宋经理沟通，又是版本同步的问题</li>
+</ol>
+<p>结果：没有问题</p>
+<h3 id="53-2-时长标题错别字"><a href="#53-2-时长标题错别字" class="headerlink" title="53.2 时长标题错别字"></a>53.2 时长标题错别字</h3><p>问题：时长列标题出现错别字</p>
+<p>解决过程： 修改相关文字</p>
+<p>结果：修改完成</p>
+<h3 id="53-3-详细地址没有数据"><a href="#53-3-详细地址没有数据" class="headerlink" title="53.3 详细地址没有数据"></a>53.3 详细地址没有数据</h3><p>问题： 详细地址没有数据</p>
+<p>解决过程： </p>
+<ol>
+<li>控制台查看接口 发现相关字段为address</li>
+<li>查看前端代码 发现字段对应不上</li>
+<li>修改相关字段名称 成功</li>
+</ol>
+<p>结果： 修改能正常显示</p>
+<h3 id="53-4-保存后，点击提交没有保存并退出该页面"><a href="#53-4-保存后，点击提交没有保存并退出该页面" class="headerlink" title="53.4 保存后，点击提交没有保存并退出该页面"></a>53.4 保存后，点击提交没有保存并退出该页面</h3><p>问题：保存后，点击提交没有保存并退出该页面</p>
+<p>解决过程：</p>
+<ol>
+<li>测试发现：点击取消可以返回，点击确认不可以</li>
+<li>查看界面代码 发现确认和取消的对应方法</li>
+<li>发现确认按钮没有相关的<code>this.$router</code>语句</li>
+<li>参照<a target="_blank" rel="noopener" href="https://blog.csdn.net/vvv3171071/article/details/121636195">教程</a>添加代码<code>this.$router.back()</code></li>
+</ol>
+<p>结果：点击确认后可以返回，且数据已经被修改</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">十早九木</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.szjm.online/2022/10/19/hwcd/日志/2022.09/2022年9月02日/">https://www.szjm.online/2022/10/19/hwcd/日志/2022.09/2022年9月02日/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.szjm.online">十早九木のBlog</a>！</span></div></div><div class="post-meta__tag-list"></div><div class="post-qr-code"><div class="post-qr-code-item"><img class="post-qr-code__img" src="../../../../../../../wx.jpg"><div class="post-qr-code__desc">来杯奶茶吧</div></div><div class="post-qr-code-item"><img class="post-qr-code__img" src="../../../../../../../zfb.jpg"><div class="post-qr-code__desc">圣代我也喜欢</div></div></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2022/10/19/hwcd/%E6%97%A5%E5%BF%97/2022.09/2022%E5%B9%B49%E6%9C%8805%E6%97%A5/"><i class="fa fa-chevron-left">  </i><span></span></a></div><div class="next-post pull-right"><a href="/2022/10/19/hwcd/%E6%97%A5%E5%BF%97/2022.09/2022%E5%B9%B49%E6%9C%8801%E6%97%A5/"><span></span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2020 - 2022 By 十早九木</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
